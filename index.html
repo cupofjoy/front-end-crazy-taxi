@@ -1,0 +1,186 @@
+<!--  https://media.giphy.com/media/FFQegRpaJSRaw/giphy.gif-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+    #wrap:after {
+      display: block;
+      height: 100%;
+      clear: both;
+      float: none;
+    }
+    #wrap div {
+      float: left;
+      height: 600px;
+      word-break: break-all;
+      z-index: -1;
+      position:relative;
+    }
+    #one {
+      width: 38%;
+      background-color: tan;
+    }
+    #two {
+      width: 24%;
+      background-color: dimgray;
+    }
+    #three {
+      width: 38%;
+      background-color: tan;
+    }
+    #user-car{
+      z-index: 0;
+      position:absolute;
+      transform: rotate(270deg);
+      height: 10%;
+      height:auto;
+      max-width: 40%
+    }
+    .obstacle-car{
+      z-index: 0;
+      position:absolute;
+      transform: rotate(270deg);
+      height: 10%;
+    }
+    #left-tree{
+      z-index: 0;
+      position:absolute;
+      left:400px;
+      height: auto;
+      max-width:20%
+    }
+    #shrub1{
+      z-index: 0;
+      position:absolute;
+      height: auto;
+      max-width:10%;
+      left: 350px;
+    }
+    #shrub2{
+      z-index: 0;
+      position:absolute;
+      height: auto;
+      max-width:10%;
+      left: 420px;
+    }
+    #right-tree{
+      z-index: 0;
+      position:absolute;
+      right:250px;
+      height: auto;
+      max-width:20%
+    }
+    .road-marking{
+      z-index: 0;
+      position:absolute;
+      left: -75px;
+    }
+    #user-form {
+      position: absolute;
+      top: 70px;
+      left: 40px;
+    }
+    #highScoreChart{
+      position: absolute;
+      left: 320px;
+      top: 20px;
+    }
+    #running-dog{
+      position:absolute;
+      height:auto;
+      max-width: 50%;
+      left: 0px;
+      top: 400px;
+    }
+    #exit-sign{
+      z-index: 0;
+      position:absolute;
+      height:auto;
+      max-width: 20%;
+      left: 50px;
+    }
+    #white-div{
+      z-index: 2;
+      float:left;
+      width:100%;
+    }
+    #white-img{
+      position:absolute;
+    }
+    #top-white-space{
+      position:absolute;
+      top: 0px;
+      z-index: 2;
+      float:left;
+    }
+    #top-white-img{
+      position:absolute;
+    }
+
+
+
+    </style>
+  </head>
+  <body>
+<div id="top-white-space">
+  <img id="top-white-img" src="./assets/topWhiteSpace.png">
+
+</div>
+
+<div id="container">
+  <ul id="option-select">
+    <button id="play-button" style="position: absolute; top: 120px; border: 2px solid black ;border-radius: 5px; padding: 10px; font-size: 20px; background-color: aqua"> Play </button>
+    <button id="high-score-button" style="position: absolute; top: 170px; border: 2px solid black ;border-radius: 5px; padding: 10px; font-size: 20px; background-color: aqua"> High Scores </button>
+  </ul>
+
+
+
+  <div id="wrap">
+      <div id="one">
+        <img id="running-dog" src="https://zippy.gfycat.com/LargePresentBlackbear.gif">
+        <img id="another-left-tree" src="http://www.webweaver.nu/clipart/img/seasons/summer/summer-tree.png" style="position:absolute; height:auto; max-width:20%; left: 400px; top: 450px;">
+        <img id="shrub1" src="https://img.clipartxtras.com/a6ae8fafe9cf69a0635db9ee36920dbf_shrub-clipart-flower-bush-pencil-and-in-color-shrub-clipart-bush-clipart-transparent-background_1260-900.png" style="top: 360px;">
+        <img id="shrub2" src="https://img.clipartxtras.com/a6ae8fafe9cf69a0635db9ee36920dbf_shrub-clipart-flower-bush-pencil-and-in-color-shrub-clipart-bush-clipart-transparent-background_1260-900.png" style="top: 0px;">
+        <img id="left-tree"src="http://2.bp.blogspot.com/-jlA7pr1pS4g/Ts6cHhyjPiI/AAAAAAAADz0/3ffLlrEVaxU/s400/tree.png" alt="Tree" style="top: 150px;">
+        <form id="user-form" >
+          <input type="text" id="user-input">
+          <input id="submit-input" type="submit" value="Enter Username">
+        </form>
+      </div>
+      <div id="two">
+        <img id="obstacle-car-1" class="obstacle-car" src="http://littlereasonstosmile.me/wp-content/uploads/red-car-top-view-clip-art-at-clker-com-vector-online-clipart-from-above.png" alt="" style="top:0px; left:98px">
+        <img id="obstacle-car-2" class="obstacle-car" src="https://images.clipartuse.com/8fb405c36558195db955512671fa1715_light-blue-car-top-view-clip-art-at-clkercom-vector-clip-art-_960-476.svg" alt="" style="top: -400px; left:-12px">
+        <img id="obstacle-car-3" class="obstacle-car" src="http://www.cse.unsw.edu.au/~cschwering/commonsense-2013-slides/graphics/car-yellow.svg" alt="" style="top:-800px; left:-12px">
+        <img id="obstacle-car-4" class="obstacle-car" src="http://littlereasonstosmile.me/wp-content/uploads/red-car-top-view-clip-art-at-clker-com-vector-online-clipart-from-above.png" alt="" style="top: -1200px; left:208px">
+        <img id="user-car" src="http://www.clker.com/cliparts/X/z/O/k/S/k/orange-car-top-view-hi.png" alt="user-car" style="top: 490px; left: 95px;">
+        <img id="road-marking 0" class="road-marking" src="https://i.imgur.com/Ygk5sQJ.png" style="top: -200px;">
+        <img id="road-marking 1" class="road-marking" src="https://i.imgur.com/Ygk5sQJ.png" style="top: 0px;">
+        <img id="road-marking 2" class="road-marking" src="https://i.imgur.com/Ygk5sQJ.png" style="top: 200px;">
+        <img id="road-marking 3" class="road-marking" src="https://i.imgur.com/Ygk5sQJ.png" style="top: 400px;">
+        <!-- <img id="road-marking 4" class="road-marking" src="https://i.imgur.com/Ygk5sQJ.png" style="top: 430px;"> -->
+      </div>
+      <div id="three">
+        <img id="exit-sign" src="./assets/new-sign.png" style="top: -100px;">
+        <ul id="highScoreChart">
+        </ul>
+
+        <img id="right-tree"src="http://2.bp.blogspot.com/-jlA7pr1pS4g/Ts6cHhyjPiI/AAAAAAAADz0/3ffLlrEVaxU/s400/tree.png" alt="Tree" style="top: 400px;">
+        <p style="position: absolute; left: 235px; top: 560px">Brought to you by: Sydney, Eelan, Aaron!</p>
+      </div>
+    </div> <!-- end of wrap div -->
+
+
+
+
+
+</div>
+  <div id="white-div">
+    <img id="white-img" src="./assets/whiteSpace.png" >
+  </div>
+  </body>
+  <script src="index.js">
+
+  </script>
+</html>
